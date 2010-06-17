@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # WSDL4R - XMLSchema element definition.
 # Copyright (C) 2000-2007  NAKAMURA, Hiroshi <nahi@ruby-lang.org>.
 

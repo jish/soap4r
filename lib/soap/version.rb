@@ -1,3 +1,4 @@
+# encoding: UTF-8
 module SOAP
   module VERSION #:nodoc:
     MAJOR = 1

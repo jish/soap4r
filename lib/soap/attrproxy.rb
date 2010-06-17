@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # SOAP4R - attribute proxy interface.
 # Copyright (C) 2000-2007  NAKAMURA, Hiroshi <nahi@ruby-lang.org>.
 

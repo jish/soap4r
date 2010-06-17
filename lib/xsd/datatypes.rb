@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # XSD4R - XML Schema Datatype implementation.
 # Copyright (C) 2000-2007  NAKAMURA, Hiroshi <nahi@ruby-lang.org>.
 
@@ -583,11 +584,11 @@ module XSDDateTimeImpl
       t <<= 12 if t.year < 0
       t
     elsif t.is_a?(Time)
-      jd = DateTime.civil_to_jd(t.year, t.mon, t.mday, DateTime::ITALY)
-      fr = DateTime.time_to_day_fraction(t.hour, t.min, [t.sec, 59].min) +
+      jd = DateTime.send(:civil_to_jd, t.year, t.mon, t.mday, DateTime::ITALY)
+      fr = DateTime.send(:time_to_day_fraction, t.hour, t.min, [t.sec, 59].min) +
         t.usec.to_r / DayInMicro
       of = t.utc_offset.to_r / DayInSec
-      DateTime.new!(DateTime.jd_to_ajd(jd, fr, of), of, DateTime::ITALY)
+      DateTime.new!(DateTime.send(:jd_to_ajd, jd, fr, of), of, DateTime::ITALY)
     else
       screen_data_str(t)
     end

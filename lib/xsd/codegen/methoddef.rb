@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # XSD4R - Generating method definition code
 # Copyright (C) 2000-2007  NAKAMURA, Hiroshi <nahi@ruby-lang.org>.
 
