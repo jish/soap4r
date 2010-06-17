@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'xsd/qname'
 
 # {http://weather.gov/forecasts/xml/DWMLgen/schema/ndfdXML.xsd}weatherParametersType

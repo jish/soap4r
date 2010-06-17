@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'enumsample_mapping_registry.rb'
 
 class EnumsampleMapper < XSD::Mapping::Mapper

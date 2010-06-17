@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'soap/rpc/standaloneServer'
 
 class EchoServer < SOAP::RPC::StandaloneServer

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'xsd/qname'
 
 # {urn:org.example.enumsample}hobbit.type

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'amazonEc.rb'
 
 require 'soap/rpc/driver'

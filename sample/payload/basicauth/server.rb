@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# encoding: UTF-8
 
 # SOAP server cannot use WEBrick's httpauth feature for now...
 require 'soap/rpc/standaloneServer'

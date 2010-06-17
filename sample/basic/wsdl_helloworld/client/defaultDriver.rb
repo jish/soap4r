@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'default.rb'
 
 require 'soap/rpc/driver'

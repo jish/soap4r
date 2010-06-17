@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# encoding: UTF-8
 
 # This is a sample client based on raaServiceClient.rb.
 # You can generate raaServiceClient.rb and related files with

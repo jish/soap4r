@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # http://www.ruby-lang.org/xmlns/soap/type/RAA/0.0.3/
 class Gem
   @@schema_type = "Gem"

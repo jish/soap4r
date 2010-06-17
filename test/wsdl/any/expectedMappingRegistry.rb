@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'echo.rb'
 require 'soap/mapping'
 

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'mysample_mapping_registry.rb'
 
 module XSD; module XSD2Ruby

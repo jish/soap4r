@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'helper'
 begin
   require 'httpclient'

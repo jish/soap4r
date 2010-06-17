@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'soap/rpc/driver'
 
 api_key = ARGV.shift or raise

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class Servant
   def self.create
     new

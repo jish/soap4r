@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'enumsample_mapper'
 
 mapper = EnumsampleMapper.new

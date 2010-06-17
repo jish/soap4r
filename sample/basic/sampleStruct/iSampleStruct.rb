@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'soap/mapping'
 
 SampleStructServiceNamespace = 'http://tempuri.org/sampleStructService'

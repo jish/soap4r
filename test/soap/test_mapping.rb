@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'helper'
 require 'soap/mapping'
 require 'soap/marshal'

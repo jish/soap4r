@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'soap/rpc/driver'
 
 server = 'http://localhost:7000/'

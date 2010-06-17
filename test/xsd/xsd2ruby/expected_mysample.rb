@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'xsd/qname'
 
 module XSD; module XSD2Ruby

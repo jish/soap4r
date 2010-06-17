@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'xsd/qname'
 
 # {http://webservices.amazon.com/AWSECommerceService/2006-06-07}Bin

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 #require 'uconv'
 require 'soap/wsdlDriver'
 

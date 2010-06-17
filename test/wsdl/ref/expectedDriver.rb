@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'product.rb'
 require 'productMappingRegistry.rb'
 require 'soap/rpc/driver'

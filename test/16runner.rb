@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'test/unit/testsuite'
 require 'test/unit/testcase'
 

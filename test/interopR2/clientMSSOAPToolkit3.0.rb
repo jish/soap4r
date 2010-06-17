@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# encoding: UTF-8
 
 $serverName = 'MicrosoftSoapToolkit3.0'
 $serverBase = 'http://mssoapinterop.org/stkV3/InteropTyped.wsdl'

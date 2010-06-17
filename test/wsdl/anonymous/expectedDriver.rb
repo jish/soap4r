@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'lp.rb'
 require 'lpMappingRegistry.rb'
 require 'soap/rpc/driver'

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'stockQuote.rb'
 
 require 'soap/rpc/driver'

@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'datetime.rb'
 
 class DatetimePortType

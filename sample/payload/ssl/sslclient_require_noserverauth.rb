@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'httpclient'
 require 'soap/rpc/driver'
 

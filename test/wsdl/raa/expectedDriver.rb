@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'RAA.rb'
 require 'RAAMappingRegistry.rb'
 require 'soap/rpc/driver'
