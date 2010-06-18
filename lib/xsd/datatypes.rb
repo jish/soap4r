@@ -507,8 +507,9 @@ require 'rational'
 require 'date'
 
 module XSDDateTimeImpl
-  DayInSec = 86400	# 24 * 60 * 60
-  DayInMicro = 86400_000_000
+  SecInMicro = 1000000 # 1 second = 1 million microseconds
+  DayInSec = 86400	# 24 Hours/Day * 60 Minutes/Hour * 60 Seconds/Minute
+  DayInMicro = (DayInSec * SecInMicro)
 
   def to_obj(klass)
     if klass == Time
@@ -526,11 +527,11 @@ module XSDDateTimeImpl
     begin
       if @data.offset * DayInSec == Time.now.utc_offset
         d = @data
-	usec = (d.sec_fraction * DayInMicro).round
+	usec = (RUBY_VERSION.to_f >= 1.9) ? (d.sec_fraction * SecInMicro).to_i : (d.sec_fraction * DayInMicro).to_i
         Time.local(d.year, d.month, d.mday, d.hour, d.min, d.sec, usec)
       else
         d = @data.newof
-	usec = (d.sec_fraction * DayInMicro).round
+  usec = (RUBY_VERSION.to_f >= 1.9) ? (d.sec_fraction * SecInMicro).to_i : (d.sec_fraction * DayInMicro).to_i
         Time.gm(d.year, d.month, d.mday, d.hour, d.min, d.sec, usec)
       end
     rescue ArgumentError
@@ -652,10 +653,8 @@ private
     if @data.sec_fraction.nonzero?
       if @secfrac
         s << ".#{ @secfrac }"
-      elsif (RUBY_VERSION.to_f >= 1.9) # RubyJedi: Ruby 1.9's DateTime.sec_fraction() appears to be more 'sane' and doesn't need to be multiplied.
-        s << sprintf("%.16f", @data.sec_fraction.to_f).sub(/^0/, '').sub(/0*$/, '')
       else
-        s << sprintf("%.16f",(@data.sec_fraction * DayInSec).to_f).sub(/^0/, '').sub(/0*$/, '')
+        s << sprintf("%.16f", (RUBY_VERSION.to_f >= 1.9) ? (@data.sec_fraction.to_f) : (@data.sec_fraction * DayInSec).to_f ).sub(/^0/, '').sub(/0*$/, '')
       end
     end
     add_tz(s)
