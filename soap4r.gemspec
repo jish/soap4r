@@ -1,5 +1,7 @@
-require 'rubygems'
-require File.join(File.dirname(__FILE__), 'lib', 'soap', 'version')
+
+$LOAD_PATH.unshift('lib')
+require 'soap/version'
+$LOAD_PATH.shift
 
 Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
@@ -23,4 +25,3 @@ Gem::Specification.new do |s|
   # don't reference the test until we see it execute fully and successfully
   # s.test_file = "test/runner.rb"
 end
-
